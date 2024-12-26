@@ -5,11 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tap Academy</title>
+    <link rel="shortcut icon" href="./images//Tap_logo.png" type="image/x-icon">
+
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-    <h1>hello</h1>
+    <h1>Course Registration Form</h1>
+    <form action="submit">
+        <fieldset>
+            <legend>Personl Information</legend>
+            <table class="Personl_info">
+                <tr>
+                    <td><label for="First_name">First Name</label></td>
+                    <td><input class="input_box" type="text" name="First_name" id="First_name" placeholder="Ex: Rasul"
+                            required></td>
+                </tr>
+                <tr>
+                    <td><label for="surname">Surname</label></td>
+                    <td><input class="input_box" type="text" name="surname" id="surname" placeholder="Ex: Panari"
+                            optional></td>
+                </tr>
+                <tr>
+                    <td><label for="Phone">Mobile Number</label></td>
+                    <td><input class="input_box" type="tel" name="Phone" id="Phone" placeholder="Ex: 7204986825"
+                            required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input class="input_box" type="email" name="email" id="email"
+                            placeholder="Ex: panarirasul@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Password">Password</label></td>
+                    <td><input class="input_box" type="password" name="Password" id="Password"
+                            placeholder="Enter Password" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Confirm_Password">Confirm Password</label></td>
+                    <td><input class="input_box" type="password" name="Confirm_Password" id="Confirm_Password"
+                            placeholder="Confirm Password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="DOB">DOB</label></td>
+                    <td><input type="date" name="DOB" class="input_box" id="DOB" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input class="check_box" type="radio" name="Gender" value="M" id="Male" required>
+                        <label for="Male">Male</label>
+                        <input class="check_box" type="radio" name="Gender" value="F" id="Female">
+                        <label for="Female">Female</label>
+                        <input class="check_box" type="radio" name="Gender" value="O" id="Other">
+                        <label for="Other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Country">Country</label></td>
+                    <td>
+                        <select name="Country" class="drop_down" id="Country" required>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="China">China</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="File">Upload Photo</label></td>
+                    <td><input type="file" name="File" class="file_input" id="File" accept="image/*"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn" type="reset" value="Reset">Reset <img src="./images/arrow_icon.png" alt="">
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Course Information</legend>
+            <table>
+                <tr>
+                    <td><label for="Course">Select Course</label></td>
+                    <td>
+                        <select name="Course" id="Course" class="drop_down" required>
+                            <option value="Java">Java Full Stack</option>
+                            <option value="Python">Python Full Stack</option>
+                            <option value="MERN">MERN Full Stack</option>
+                            <option value="Cyber">Cyber Security</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Delivery Mode</label></td>
+                    <td>
+                        <input class="check_box" type="checkbox" name="Mode" value="Online" id="Online">
+                        <label for="Online">ONLINE</label>
+                        <input class="check_box" type="checkbox" name="Mode" value="Offline" id="Offline">
+                        <label for="Offline">OFFLINE</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="comment">Comment</label></td>
+                    <td><textarea name="comment" id="comment" cols="40" rows="5"
+                            placeholder="Enter your Comments here...!"></textarea></td>
+                </tr>
+                <tr>
+
+                    <td><button class="btn" type="submit">Submit <img src="./images/send_plane_icon.png"
+                                alt="Submit Icon"></button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+
+
 </body>
 
 </html>
