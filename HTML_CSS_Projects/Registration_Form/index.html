@@ -19,39 +19,76 @@
             <table class="Personl_info">
                 <tr>
                     <td><label for="First_name">First Name</label></td>
-                    <td><input class="input_box" type="text" name="First_name" id="First_name" placeholder="Ex: Rasul"
-                            required></td>
+                    <td>
+                        <input class="input_box" type="text" name="First_name" id="First_name" placeholder="Ex: Rasul"
+                            required>
+
+                        <p>Enter your first name</p>
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="surname">Surname</label></td>
-                    <td><input class="input_box" type="text" name="surname" id="surname" placeholder="Ex: Panari"
-                            optional></td>
+                    <td>
+                        <input class="input_box" type="text" name="surname" id="surname" placeholder="Ex: Panari"
+                            optional>
+
+                        <p>Enter your Last Name</p>
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="Phone">Mobile Number</label></td>
-                    <td><input class="input_box" type="tel" name="Phone" id="Phone" placeholder="Ex: 7204986825"
-                            required></td>
+                    <td>
+                        <input class="input_box" type="tel" name="Phone" id="Phone" placeholder="Ex: 7204986825"
+                            required>
+
+                        <p>Enter a Phone number</p>
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="email">Email</label></td>
-                    <td><input class="input_box" type="email" name="email" id="email"
-                            placeholder="Ex: panarirasul@gmail.com" required></td>
+                    <td>
+                        <input class="input_box" type="email" name="email" id="email"
+                            placeholder="Ex: panarirasul@gmail.com" required>
+                        <p>Enter a email address</p>
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="Password">Password</label></td>
-                    <td><input class="input_box" type="password" name="Password" id="Password"
-                            placeholder="Enter Password" required></td>
+                    <td>
+                        <input class="input_box" type="password" name="Password" id="Password"
+                            placeholder="Enter Password" required>
+                        <div>
+                            <p>Your password should be at least 8 characters</p>
+                            <p>Use uppercase letters numbers ( A-Z )</p>
+                            <p>Use lowercase letters ( a-z )</p>
+                            <p>Use symbols ( @#$%... )</p>
+                        </div>
+                    </td>
                 </tr>
 
                 <tr>
                     <td><label for="Confirm_Password">Confirm Password</label></td>
-                    <td><input class="input_box" type="password" name="Confirm_Password" id="Confirm_Password"
+                    <td>
+                        <input class="input_box" type="password" name="Confirm_Password" id="Confirm_Password"
                             placeholder="Confirm Password" required>
+                        <p>Re-enter your password</p>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="DOB">DOB</label></td>
-                    <td><input type="date" name="DOB" class="input_box" id="DOB" required></td>
+                    <td>
+                        <input type="date" name="DOB" class="input_box" id="DOB" required>
+                        <p>Select your date of birth</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td>
+                        <input type="number" name="age" class="input_box" id="age" placeholder="Enter Your Age" required
+                            min="18" max="100">
+                        <p>Enter your age (18-100)</p>
+
+                    </td>
                 </tr>
                 <tr>
                     <td><label>Gender</label></td>
@@ -75,6 +112,7 @@
                             <option value="Japan">Japan</option>
                             <option value="Australia">Australia</option>
                         </select>
+                        <p>Select Country</p>
                     </td>
                 </tr>
                 <tr>
@@ -101,21 +139,32 @@
                             <option value="MERN">MERN Full Stack</option>
                             <option value="Cyber">Cyber Security</option>
                         </select>
+                        <p>Select Course</p>
                     </td>
                 </tr>
                 <tr>
                     <td><label>Delivery Mode</label></td>
                     <td>
-                        <input class="check_box" type="checkbox" name="Mode" value="Online" id="Online">
+                        <input class="check_box" type="radio" name="Mode" value="Online" id="Online">
                         <label for="Online">ONLINE</label>
-                        <input class="check_box" type="checkbox" name="Mode" value="Offline" id="Offline">
+                        <input class="check_box" type="radio" name="Mode" value="Offline" id="Offline">
                         <label for="Offline">OFFLINE</label>
                     </td>
                 </tr>
                 <tr>
+                    <td><label for="instituteName">Institute Name</label></td>
+                    <td><input class="input_box" type="text" name="instituteName" id="instituteName" value="TAP ACADEMY"
+                            readonly required></td>
+                </tr>
+
+                <tr>
                     <td><label for="comment">Comment</label></td>
-                    <td><textarea name="comment" id="comment" cols="40" rows="5"
-                            placeholder="Enter your Comments here...!"></textarea></td>
+                    <td>
+                        <textarea name="comment" id="comment" cols="35" rows="5"
+                            placeholder="Enter your Comments here...!"></textarea>
+                        <p>Feel free to ask</p>
+                    </td>
+
                 </tr>
                 <tr>
 

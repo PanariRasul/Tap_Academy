@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -25,13 +23,13 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 50%;
+    width: 55%;
     margin: 20px auto;
 }
 
 fieldset {
     padding: 20px;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 20px;
 }
 
@@ -41,7 +39,7 @@ legend {
 }
 
 table {
-    border-spacing: 10px 10px
+    border-spacing: 10px 10px;
 }
 
 label {
@@ -55,6 +53,10 @@ label {
     outline: transparent;
     padding: 7px 10px;
     font-size: 14px;
+}
+
+.input_box:focus {
+    border: 2px solid #A6AEBF;
 }
 
 .btn {
@@ -74,16 +76,15 @@ label {
     font-size: 18px;
     font-weight: 600;
     transition: 0.7s;
+    cursor: pointer;
 }
 
 .btn img {
     height: 27px;
 }
 
-
 .btn:hover {
     background-color: #FF6600;
-    transform: transition;
     color: white;
 }
 
@@ -104,14 +105,13 @@ label {
     width: 200px;
     border: none;
     outline: transparent;
-
 }
 
 .check_box {
     width: 15px;
     height: 15px;
+    cursor: pointer;
 }
-
 
 textarea {
     outline: transparent;
@@ -120,13 +120,77 @@ textarea {
     padding: 5px 10px;
 }
 
-.alert {
+
+input[type="radio"]:checked {
+    width: 20px;
+    height: 20px;
+}
+
+input[type="radio"]:checked+label {
+    color: #ff0000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[readonly] {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p {
     display: none;
-
 }
 
-.alert:hover {
+input:hover+p {
     display: inline;
+    width: 140px;
+    font-size: 12px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 5px;
 }
 
+input:hover+div p,
+input:focus+div p {
+    display: block;
+    font-size: 12px;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin-top: 3px;
+}
 
+select+p {
+    display: none;
+    transition: 1s;
+
+}
+
+select:hover+p {
+    display: inline;
+    font-size: 12px;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin-top: 3px;
+    transition: transform;
+}
+
+textarea+p {
+    display: none;
+    transition: 1s;
+}
+
+textarea:hover+p {
+    display: inline;
+    font-size: 12px;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 5px;
+    transform: transition;
+}
